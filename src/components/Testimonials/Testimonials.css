@@ -1,4 +1,4 @@
-.Testimonials {
+.testimonials {
   display: flex;
   gap: 1rem;
   padding: 0 2rem;
@@ -84,6 +84,13 @@
   .testimonials {
     flex-direction: column;
   }
+  .left-t {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
   .left-t > :nth-child(2),
   .left-t > :nth-child(3) {
     font-size: xx-large;
@@ -91,6 +98,7 @@
 
   .right-t {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -101,9 +109,10 @@
     display: none;
   }
   .right-t > img {
+    position: relative;
     top: 1rem;
     right: 0;
-    position: relative;
+
     align-self: center;
   }
   .right-t > :last-child {
